@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-center-backend
+  #Data source config
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/user-center
+    username: root
+    password: ZJJ201225zjj
+server:
+  port: 8080
+
