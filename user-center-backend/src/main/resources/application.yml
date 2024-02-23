@@ -9,4 +9,13 @@ spring:
     password: ZJJ201225zjj
 server:
   port: 8080
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # field name of logic delete
+      logic-delete-value: 1 # already deleted, default 1
+      logic-not-delete-value: 0 # not delete, default 0
+
 

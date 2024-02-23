@@ -1,14 +1,18 @@
 package com.zjj.usercenterbackend.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zjj.usercenterbackend.model.User;
+import com.zjj.usercenterbackend.model.domain.User;
 
 /**
- * @Classname UserMapper
- * @Description TODO
- * @Author zjj
- * @Date 2/22/24 2:31 PM
- */
+* @author zj
+* @description 针对表【user】的数据库操作Mapper
+* @createDate 2024-02-22 16:37:48
+* @Entity generator.domain.User
+*/
 public interface UserMapper extends BaseMapper<User> {
 
 }
+
+
+
+
