@@ -20,9 +20,10 @@ export async function outLogin(options?: { [key: string]: any }) {
   });
 }
 
-/** 登录接口 POST /api/login/account */
+const BASE_URL = "http://localhost:8080";
+/** 登录接口 POST /login/user */
 export async function login(body: API.LoginParams, options?: { [key: string]: any }) {
-  return request<API.LoginResult>('/api/login/account', {
+  return request<API.LoginResult>(BASE_URL + '/login/user', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

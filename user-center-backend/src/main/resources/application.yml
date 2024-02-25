@@ -9,6 +9,9 @@ spring:
     password: ZJJ201225zjj
 server:
   port: 8080
+  # in front add /api prefix
+  servlet:
+    context-path: /api
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
